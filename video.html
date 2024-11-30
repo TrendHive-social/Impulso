@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Buttons with Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 100px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 35px;
+            font-weight: bold;
+            border: none;
+            border-radius: 80px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Button 1: Sunset Gradient */
+        .btn-sunset {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .btn-sunset:hover {
+            background: linear-gradient(45deg, #feb47b, #ff7e5f);
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button 2: Aqua Gradient */
+        .btn-aqua {
+            background: linear-gradient(45deg, #43cea2, #185a9d);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .btn-aqua:hover {
+            background: linear-gradient(45deg, #185a9d, #43cea2);
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button 3: Purple Gradient */
+        .btn-purple {
+            background: linear-gradient(45deg, #7b4397, #dc2430);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .btn-purple:hover {
+            background: linear-gradient(45deg, #dc2430, #7b4397);
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <!-- Button 1: Sunset -->
+        <a href="https://screenapp.io/features/video-analyzer" target="_blank" class="btn btn-sunset">Video Analyser</a>
+        
+        <!-- Button 2: Aqua -->
+        <a href="https://screenapp.io/features/audio-analyzer" target="_blank" class="btn btn-aqua">Audio Analyser</a>
+        
+        <!-- Button 3: Purple -->
+        <a href="https://ahrefs.com/writing-tools/instagram-caption-generator" target="_blank" class="btn btn-purple">Caption Generator</a>
+    </div>
+</body>
+</html>
